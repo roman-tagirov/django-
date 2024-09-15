@@ -1,0 +1,274 @@
+body {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+    user-select: none;
+    transition: background-color 0.5s ease;
+}
+.djangodesclove {
+    color: color-mix(in srgb, currentColor 50%, transparent);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    padding: 15px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.social-button {
+    margin: 0 15px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+@media screen and (min-width: 500px) {
+.social-button:hover {
+    background-color: #444;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}}
+
+main {
+    padding-top: 80px;
+}
+.image-text {
+display: flex;
+align-items: center;
+}
+.image-text__image {
+flex: 0 0 auto;
+padding: 1em;
+}
+.image-text__image img {
+display: block;
+    width: 500px;
+}
+a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+.image-text__text {
+flex: 1 1 auto;
+padding: 1em;
+}
+#about-me {
+    padding: 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+.profile-img {
+    border: 2px solid #444;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+@media screen and (min-width: 500px) {
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}}
+
+h1 {
+    margin: 15px 0;
+    font-size: 32px;
+    color: #333;
+    transition: transform 0.3s, color 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+
+}
+@media screen and (min-width: 500px) {
+h1:hover {
+    transform: scale(1.1);
+    color: #000;
+}}
+
+.description {
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    transition: transform 0.3s, color 0.3s;
+}
+@media screen and (min-width: 500px) {
+.description:hover {
+    transform: scale(1.05);
+    color: #444;
+}}
+
+.portfolio-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+@media screen and (min-width: 500px) {
+.portfolio-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}}
+
+#hobbies {
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#hobbies h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.hobby {
+    margin-bottom: 40px;
+}
+
+.hobby-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+@media screen and (min-width: 500px) {
+.hobby-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}}
+
+.hobby-description {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#widgets {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.widget-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s;
+    margin-top: 10px;
+}
+
+.widget-container img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+@media screen and (min-width: 500px) {
+.widget-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}}
+@media screen and (max-width: 500px) {
+    .desktop-portfolio{
+        display: none;
+    }
+    .desktop-header{
+        display: none;
+    }
+    .desktop-widgets{
+        display: none;
+    }
+    .desktopabout{
+        display: none;
+    }
+}
+@media screen and (min-width: 500px) {
+    .mobile-portfolio{
+        display: none;
+    }
+    .mobile-header{
+        display: none;
+    }
+    .mobile-about{
+        display: none;
+    }
+}
+.widget-container svg {
+    max-width: 1000px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+@media screen and (min-width: 500px) {
+.widget-container svg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}}
+.portfolio-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+@media screen and (min-width: 500px) {
+    .portfolio-button:hover {
+        background-color: #555;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
